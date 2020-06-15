@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--Para renderizar adequadamente em dispositivos moveis-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Projeto 10 - Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register User</h1>
+      <form>
+          <div class="form-group">
+              <label>Email address</label>
+              <input type="email" class="form-control"  placeholder="Enter email">
+          </div>
+          <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label>Dia</label>
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message area</label>
+            <textarea class="form-control" rows="5"></textarea>
+          </div>
+          <div classs = "form-group">
+            <label>Foto</label>
+            <input type="file" class="form-control-file"><br/>
+          </div>
+          <div class = "form-group">
+            <label>User</label>
+            <input class ="form-control" type="text" placeholder="User Name" readonly>
+          </div>
+          <div class = "form-group">
+            <label>Email principal</label>
+            <input type="text" readonly class="form-control-plaintext" value="brunyyta@outlook.com">
+          </div>
+          <div class="form-group">
+            <label>Subjects</label>
+            <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class= "form-check-label" for="defaultCheck1">
+                Math
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class= "form-check-label" for="defaultCheck1">
+                History
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" disabled>
+              <label class= "form-check-label" for="defaultCheck1">
+                Portuguese
+              </label>
+            </div>
+          </div>
+          <div class="form-check">
+            <label>Situation</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" value="option2">
+              <label class="form-check-label" for="exampleRadios">
+                Second default radio
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="exampleRadios" value="option3" disabled>
+              <label class="form-check-label" for="exampleRadios">
+                Disabled
+              </label>
+            </div>
+          </div>
+          <div class = "form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for ="exampleCheck1">Check me out</label>
+          </div>
+          <button type ="submit" class = "btn btn-success">Submit</button>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
