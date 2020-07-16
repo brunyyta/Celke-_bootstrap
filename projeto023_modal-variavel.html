@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--Para renderizar adequadamente em dispositivos moveis-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Projeto 23 - Modal Variável</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Exemplo de janela modal com variável</h1>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editarUsuario"
+        data-whatever="Brunyyta">
+            Open modal for Brunyyta
+        </button>
+
+        <div class="modal fade" id="editarUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">User: </label>
+                            <input type="text" class="form-control" id="usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Email: </label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    
+    <script>
+        $('#editarUsuario').on('show.bs.modal',function(event){
+            var button = $(event.relatedTarget);
+            var usuario = button.data('whatever');
+            var modal = $(this);
+            modal.find('.modal-title').text('New Message to '+usuario);
+            modal.find('#usuario').val(usuario);
+        })
+    </script>
+
+  </body>
+</html>
