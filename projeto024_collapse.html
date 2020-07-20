@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--Para renderizar adequadamente em dispositivos moveis-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Projeto 24 - Collapse</title>
+  </head>
+  <body>
+    <div class="container">
+        <p>
+            <h1>Exemplo Básico de Collapse</h1>
+            <a href="#collapseExample" class="btn btn-primary" type="button" data-toggle="collapse" 
+            data-target="#collapseExample">
+                Linke with ref
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+                Button with data-target
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Architecto, molestiae vel magni culpa nihil distinctio.
+            </div>
+        </div>
+        <hr>
+        <h2>Múltiplos alvos</h2>
+        <p>
+            <a class="btn btn-primary" href="#multiCollapseExample1" data-toggle="collapse" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample1">
+                Toggle first element
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+            aria-expanded="false" aria-controls="multiCollapseExample2">
+                Toggle second element
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse"
+            aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+                Toggle both elements
+            </button>
+            <div class="row">
+               <div class="col">
+                   <div class="collapse multi-collapse" id="multiCollapseExample1">
+                       <div class="card card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate nihil 
+                            praesentium dignissimos maxime soluta mollitia, dicta aliquid ducimus maiores?
+                       </div>
+                   </div>
+               </div>
+               <div class="col">
+                   <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Pariatur aliquid explicabo omnis placeat perferendis atque eius error.
+                        </div>
+                   </div>
+               </div>
+            </div>
+        </p>
+        <hr>
+        <h1>Accordion</h1>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                        </button>
+                    </h5>
+                </div>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Enim veritatis vitae alias odit quasi voluptate voluptatibus, 
+                    temporibus veniam consequuntur non rerum totam aut optio laudantium tenetur nostrum. 
+                    Veniam sint ipsa deleniti quis? Enim ex tempora iusto ipsa deleniti, 
+                    iste impedit inventore atque accusantium unde minus quibusdam nam, 
+                    facilis quaerat officiis.
+                </div>
+            </div>  
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas accusamus, 
+                        adipisci eum officiis eveniet libero cum aspernatur eligendi voluptatibus accusantium 
+                        soluta enim tempora magni aperiam optio perspiciatis veritatis tenetur, in ratione! 
+                        Dignissimos ipsam quisquam sapiente deleniti quas placeat officia quam vitae porro quis, 
+                        expedita explicabo blanditiis. Accusantium, perferendis quaerat!
+                    </div>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                        </button>
+                    </h5>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Soluta laudantium laborum perspiciatis nulla, omnis ipsum? Fugiat nisi deserunt 
+                            ducimus repudiandae labore voluptatibus iure excepturi voluptate, 
+                            eveniet fugit quasi temporibus veritatis?
+                        </div>
+                    </div>
+
+                </div>
+            </div>        
+        </div>
+    </div>
+  
+   
+
+
+
+
+
+
+
+
+
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    
+   </body>
+</html>

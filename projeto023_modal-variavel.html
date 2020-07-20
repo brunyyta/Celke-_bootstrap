@@ -14,7 +14,7 @@
     <div class="container">
         <h1>Exemplo de janela modal com variável</h1>
         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editarUsuario"
-        data-whatever="Brunyyta">
+        data-whatever="Brunyyta" data-email="email@email.com">
             Open modal for Brunyyta
         </button>
 
@@ -39,11 +39,14 @@
                         </div>
                     </form>
                 </div> 
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary">Send</button>
+                </div>
             </div>
         </div>
-
     </div>
-
+  
     
 
 
@@ -66,9 +69,11 @@
         $('#editarUsuario').on('show.bs.modal',function(event){
             var button = $(event.relatedTarget);
             var usuario = button.data('whatever');
+            var email = button.data('email');
             var modal = $(this);
             modal.find('.modal-title').text('New Message to '+usuario);
             modal.find('#usuario').val(usuario);
+            modal.find('#email').val(email);
         })
     </script>
 
